@@ -1,7 +1,7 @@
 {
-  "name": "react95",
-  "version": "0.0.0-development",
-  "description": "Refreshed Windows95 UI components for modern web apps - React95",
+  "name": "react95-tegaki",
+  "version": "1.0.0",
+  "description": "Refreshed Windows95 UI components for modern web apps - React95 (Tegaki fork)",
   "keywords": [
     "react",
     "styled-components",
@@ -11,7 +11,7 @@
   ],
   "license": "MIT",
   "repository": "git@github.com:tegaki-tegaki/React95.git",
-  "homepage": "https://react95.io",
+  "homepage": "https://github.com/tegaki-tegaki/React95",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

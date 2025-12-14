@@ -229,7 +229,7 @@ function SelectInner<T>(
       {...wrapperProps}
       $disabled={disabled}
       ref={wrapperRef}
-      shadow={shadow}
+      $shadow={shadow}
       style={{ ...style, width }}
     >
       <input
