@@ -58,7 +58,7 @@ function SelectInnerOption<T>({
 
   return (
     <StyledDropdownMenuItem
-      active={active}
+      $active={active}
       aria-selected={selected ? 'true' : undefined}
       data-value={option.value}
       id={id}
@@ -267,7 +267,7 @@ function SelectInner<T>(
           role='listbox'
           style={dropdownMenuStyle}
           tabIndex={0}
-          variant={variant}
+          $variant={variant}
         >
           {optionsContent}
         </StyledDropdownMenu>
