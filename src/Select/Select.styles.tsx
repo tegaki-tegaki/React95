@@ -15,8 +15,8 @@ import { SelectVariants } from './Select.types';
 
 type CommonSelectStyleProps = {
   $disabled?: boolean;
-  native?: boolean;
-  variant?: SelectVariants;
+  $native?: boolean;
+  $variant?: SelectVariants;
 } & CommonThemeProps;
 
 const sharedInputContentStyles = css`
@@ -111,7 +111,7 @@ export const StyledDropdownButton = styled(Button).attrs(() => ({
   'aria-hidden': 'true'
 }))<{
   $disabled?: boolean;
-  native?: boolean;
+  $native?: boolean;
   $variant?: 'default' | 'flat' | 'raised';
 }>`
   width: 30px;
@@ -126,8 +126,8 @@ export const StyledDropdownButton = styled(Button).attrs(() => ({
       : css`
           height: 100%;
         `}
-  ${({ native = false, $variant = 'raised' }) =>
-    native &&
+  ${({ $native = false, $variant = 'raised' }) =>
+    $native &&
     ($variant === 'flat'
       ? `
       position: absolute;
@@ -140,8 +140,8 @@ export const StyledDropdownButton = styled(Button).attrs(() => ({
     right: 2px;
     height: calc(100% - 4px);
     `)}
-    pointer-events: ${({ $disabled = false, native = false }) =>
-    $disabled || native ? 'none' : 'auto'}
+    pointer-events: ${({ $disabled = false, $native = false }) =>
+    $disabled || $native ? 'none' : 'auto'}
 `;
 
 export const StyledDropdownIcon = styled.span<CommonSelectStyleProps>`
