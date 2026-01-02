@@ -1,4 +1,6 @@
-import { useMemo } from 'react';
+import * as React from 'react';
+
+const useReactId = (React as any).useId as (() => string) | undefined;
 
 function makeId() {
   const chars =
@@ -10,6 +12,8 @@ function makeId() {
   return id;
 }
 
-export const useId = (id?: string) => {
-  return useMemo(() => id ?? makeId(), [id]);
+export const useId = (idProp?: string): string => {
+  const reactId = useReactId?.();
+  const fallbackId = React.useMemo(() => makeId(), []);
+  return idProp ?? reactId ?? fallbackId;
 };
