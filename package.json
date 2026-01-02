@@ -111,7 +111,12 @@
     "styled-components": "^5.3.5",
     "ts-jest": "^28.0.7",
     "typescript": "^4.7.4",
-    "webpack": "5"
+    "webpack": "5",
+    "@types/styled-components": "^5.1.36"
+  },
+  "resolutions": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
   },
   "dependencies": {},
   "husky": {
