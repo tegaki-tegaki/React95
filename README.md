@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This fork is somewhat updated from upstream to support later versions of React (18+), and styled-components v6. But no promises.
+
 <h1 align="center">React95</h1>
 
 <p align="center">
