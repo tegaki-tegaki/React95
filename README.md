@@ -1,5 +1,5 @@
 > [!WARNING]  
-> This fork is somewhat updated from upstream to support later versions of React (18+), and styled-components v6. But it's a very ad-hoc whac-a-mole fork where the primary motivator is a private project and _not_ to completely fix and revamp the library itself. So expect bits and pieces to be missing as only the parts of this library that is actually used by the project is likely to work as intended or look decent.
+> This fork is somewhat updated from upstream to support later versions of React (18+), and styled-components v6. But it's a very ad-hoc whac-a-mole fork where the primary motivator is a private project consuming this library and _not_ to completely fix and revamp the library itself. So expect bits and pieces to be missing as only the parts of this library that is actually used by the project is likely to work as intended or look decent.
 
 <h1 align="center">React95</h1>
 
